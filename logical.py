@@ -1,7 +1,7 @@
 import pandas as pd
 import ast
 
-def calculate_project_score(blocks_dic):
+def calculate_project_score_logical(blocks_dic):
     # 리스트 정의 (흐름블록, 판단블록, 시작블록)
     B_Flow = ['wait_second', 'repeat_basic', 'repeat_inf', 'repeat_while_true', 'stop_repeat', '_if', 'if_else', 'wait_until_true',
               'stop_object', 'restart_project', 'when_clone_start', 'create_clone', 'delete_clone', 'remove_all_clones']
@@ -38,7 +38,7 @@ def calculate_project_score(blocks_dic):
     return logicalScore
 
 
-def calculate_user_score(scores):
+def calculate_user_score_logical(scores):
     if len(scores) > 2:  # 프로젝트 3개 이상일 경우 최저, 최고값 제외 후 평균 계산
         avg = (sum(scores) - max(scores) - min(scores)) / (len(scores) - 2)
         return round(avg, 2)
@@ -56,7 +56,7 @@ def main():
     # df파일 읽으며 프로젝트별 논리성 점수 계산, 파일 새로 생성
     for index, row in df.iterrows():
         blocks_dic = ast.literal_eval(row['blocks'])
-        logical_score = calculate_project_score(blocks_dic)
+        logical_score = calculate_project_score_logical(blocks_dic)
         new = pd.concat([new, pd.DataFrame(
             {'userid': [row['userid']], 'projectid': [row['projectid']], 'date': [row['date']],
              'logicalScore': [logical_score]})], ignore_index=True)
@@ -70,7 +70,7 @@ def main():
     output['userid'] = df2['userid'].unique()  # df2에 존재하는 userid 저장
 
     # 유저 id별로 logicalScore 평균값 계산
-    L = df2.groupby('userid')['logicalScore'].apply(lambda x: calculate_user_score(x.tolist())).reset_index()
+    L = df2.groupby('userid')['logicalScore'].apply(lambda x: calculate_user_score_logical(x.tolist())).reset_index()
 
     output = pd.merge(output, L, on='userid', how='left')
 
