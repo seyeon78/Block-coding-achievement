@@ -20,7 +20,7 @@
 
 
 ## 프로젝트 결과물
-### 대시보드 예시)
+### 대시보드 예시
 
 > 그룹 대시보드
 > ![image](https://github.com/seyeon78/Block-coding-achievement/assets/150774437/6078e39d-b167-42d5-9b8c-ef86f9e5b5a2)
