@@ -14,8 +14,9 @@
 
 ### 요약
 
-### 디렉토리? 구조 / 프레임워크
-![image](https://github.com/seyeon78/Block-coding-achievement/assets/150774437/e25523e0-9c15-4137-b04a-68da98a565c4)
+### 프레임워크
+<img width="878" alt="KakaoTalk_20240508_091549254" src="https://github.com/seyeon78/Block-coding-achievement/assets/150774446/3abd42ce-eb26-4ddc-872e-4a7aad4cc096">
+
 
 
 
