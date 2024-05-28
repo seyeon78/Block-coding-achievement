@@ -1,7 +1,7 @@
 import pandas as pd
 import ast
 
-def calculate_project_score_logical(blocks_dic):
+def calculate_project_score_logicality(blocks_dic):
     # 리스트 정의 (흐름블록, 판단블록, 시작블록)
     B_Flow = ['wait_second', 'repeat_basic', 'repeat_inf', 'repeat_while_true', 'stop_repeat', '_if', 'if_else', 'wait_until_true',
               'stop_object', 'restart_project', 'when_clone_start', 'create_clone', 'delete_clone', 'remove_all_clones']
@@ -38,7 +38,7 @@ def calculate_project_score_logical(blocks_dic):
     return logicalScore
 
 
-def calculate_user_score_logical(scores):
+def calculate_user_score_logicality(scores):
     if len(scores) > 2:  # 프로젝트 3개 이상일 경우 최저, 최고값 제외 후 평균 계산
         avg = (sum(scores) - max(scores) - min(scores)) / (len(scores) - 2)
         return round(avg, 2)
