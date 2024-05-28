@@ -35,4 +35,4 @@
 
 > 개인 대시보드
 > ![image](https://github.com/seyeon78/Block-coding-achievement/assets/150774437/9c9589d3-ca38-437d-a6e8-bcc539dd43a1)
-<img src="[/path/to/img](https://github.com/seyeon78/Block-coding-achievement/assets/150774437/9c9589d3-ca38-437d-a6e8-bcc539dd43a1).jpg" width="40%" height="30%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img>
+<img src="https://github.com/seyeon78/Block-coding-achievement/assets/150774437/9c9589d3-ca38-437d-a6e8-bcc539dd43a1.jpg" width="40%" height="30%" title="px(픽셀) 크기 설정"></img>
