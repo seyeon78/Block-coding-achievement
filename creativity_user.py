@@ -93,7 +93,7 @@ def main_creativity():
 
     new.to_csv('creativity_project.csv', index=False)
 
-    # 프로젝트별 논리성 점수 파일 읽은후 유저별 점수 계산
+    # 프로젝트별 창의성 점수 파일 읽은후 유저별 점수 계산
     df2 = pd.read_csv('creativity_project.csv')
 
     output = pd.DataFrame()
