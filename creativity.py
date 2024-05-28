@@ -10,7 +10,7 @@ Original file is located at
 import pandas as pd
 import ast
 
-def calculate_project_score(blocks_dic):
+def calculate_project_score_creativity(blocks_dic):
     # 카테고리별 블록 리스트
     func_blocks = ['functionAddButton', 'function_name', 'showFunctionPropsButton', 'set_func_variable', 'get_func_variable']
     l2 = ['show', 'hide', 'remove_dialog', 'flip_x', 'flip_y']
