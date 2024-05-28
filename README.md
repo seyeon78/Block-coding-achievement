@@ -5,11 +5,7 @@
 
 | 김세연(PM) | 김예진 | 김은수 | 채규현 | 최덕우 |
 | :---: | :---: | :---: | :---: | :---: |
-| ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/9a60fad0-3d9c-4307-8bc0-aa5b03bda18d/5a336b89-c7d2-4531-9f18-895917b2e363/Untitled.png) |
-| ![KakaoTalk_20240308_202315908](https://github.com/seyeon78/Block-coding-achievement/assets/150774446/0900132e-fbd8-4bb9-a05f-0fb93d2bc419) |
-| ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/9a60fad0-3d9c-4307-8bc0-aa5b03bda18d/4cee692c-0714-4cdc-8504-089667993759/Untitled.png) |
-| ![KakaoTalk_20240308_202315908](https://github.com/seyeon78/Block-coding-achievement/assets/150774446/0900132e-fbd8-4bb9-a05f-0fb93d2bc419) |
-| ![KakaoTalk_20240308_202315908](https://github.com/seyeon78/Block-coding-achievement/assets/150774446/0900132e-fbd8-4bb9-a05f-0fb93d2bc419) |
+| [![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/9a60fad0-3d9c-4307-8bc0-aa5b03bda18d/5a336b89-c7d2-4531-9f18-895917b2e363/Untitled.png)](https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2F9a60fad0-3d9c-4307-8bc0-aa5b03bda18d%2F5a336b89-c7d2-4531-9f18-895917b2e363%2FUntitled.png?table=block&id=6fe18ed3-2afe-4361-ba60-e7eebc3174c0&spaceId=9a60fad0-3d9c-4307-8bc0-aa5b03bda18d&width=1980&userId=47b65834-01ea-49fd-ab8f-1f2ff6b590f9&cache=v2) | ![KakaoTalk_20240308_202315908](https://github.com/seyeon78/Block-coding-achievement/assets/150774446/0900132e-fbd8-4bb9-a05f-0fb93d2bc419) | ![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/9a60fad0-3d9c-4307-8bc0-aa5b03bda18d/4cee692c-0714-4cdc-8504-089667993759/Untitled.png) | ![KakaoTalk_20240308_202315908](https://github.com/seyeon78/Block-coding-achievement/assets/150774446/0900132e-fbd8-4bb9-a05f-0fb93d2bc419) | ![KakaoTalk_20240308_202315908](https://github.com/seyeon78/Block-coding-achievement/assets/150774446/0900132e-fbd8-4bb9-a05f-0fb93d2bc419) |
 
 ## 프로젝트 소개
 ### 주제
