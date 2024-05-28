@@ -14,7 +14,7 @@
 
 ### 요약
 
-### 디렉토리? 구조
+### 디렉토리? 구조 / 프레임워크
 ![image](https://github.com/seyeon78/Block-coding-achievement/assets/150774437/e25523e0-9c15-4137-b04a-68da98a565c4)
 
 
