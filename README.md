@@ -5,7 +5,7 @@
 
 | 김세연(PM) | 김예진 | 김은수 | 채규현 | 최덕우 |
 | :---: | :---: | :---: | :---: | :---: |
-|  ![e9c2a6dd768e1651-sticker](https://github.com/seyeon78/Block-coding-achievement/assets/150774437/ebba0c27-938e-4faa-9418-2d4277b41ad4) | ![KakaoTalk_20240308_202315908](https://github.com/seyeon78/Block-coding-achievement/assets/150774446/0900132e-fbd8-4bb9-a05f-0fb93d2bc419) | ![c9355352b2612473-sticker](https://github.com/seyeon78/Block-coding-achievement/assets/150774437/151c5308-80fa-4150-883d-fd8d882fdb89) | ![KakaoTalk_20240308_202315908](https://github.com/seyeon78/Block-coding-achievement/assets/150774446/0900132e-fbd8-4bb9-a05f-0fb93d2bc419) | ![31c12797f97016ae-sticker](https://github.com/seyeon78/Block-coding-achievement/assets/150774437/9e22a6ec-5cbd-4ff7-a99a-fe039e5d46e9) |
+|  ![e9c2a6dd768e1651-sticker](https://github.com/seyeon78/Block-coding-achievement/assets/150774437/ebba0c27-938e-4faa-9418-2d4277b41ad4) | ![KakaoTalk_20240308_202315908](https://github.com/seyeon78/Block-coding-achievement/assets/150774446/0900132e-fbd8-4bb9-a05f-0fb93d2bc419) | !![cd6c80c19699a79b-sticker](https://github.com/seyeon78/Block-coding-achievement/assets/150774437/9baa5818-8bdb-4ee1-91a8-8f2780980be5) | ![KakaoTalk_20240308_202315908](https://github.com/seyeon78/Block-coding-achievement/assets/150774446/0900132e-fbd8-4bb9-a05f-0fb93d2bc419) | ![31c12797f97016ae-sticker](https://github.com/seyeon78/Block-coding-achievement/assets/150774437/9e22a6ec-5cbd-4ff7-a99a-fe039e5d46e9) |
 
 ## 📌 프로젝트 소개
 ### 주제
