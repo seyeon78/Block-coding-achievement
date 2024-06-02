@@ -21,10 +21,19 @@
 |창의성(Creativity)|자율적인 요소(디자인, 함수)를 활용하여 프로젝트를 구성했는가?|30%|문제해결능력|
 |적극성(Positiveness)|질의응답 게시판 등에서 인사이트를 얻기 위해 얼마나 능동적으로 노력하였는가?|20%|자기주도 학습능력|
 
-
-
 ### 프레임워크
 <img width="878" alt="KakaoTalk_20240508_091549254" src="https://github.com/seyeon78/Block-coding-achievement/assets/150774446/3abd42ce-eb26-4ddc-872e-4a7aad4cc096">
+
+## 📌 데이터 소개
+엔트리 서비스의 블록코딩 데이터
+- 네이버 커넥트 재단에서 제공하는 연구용 교육 데이터
+- 형태 : JSON
+- 플랫폼에 축적된 사용자의 작품, 커뮤니티 등의 활동 데이터
+
+### 사용한 데이터
+groups.json의 userid를 기준으로\
+logblocksprojects.json, likes.json, favorites.json, discusses.json, comments.json\
+5개의 파일 사용
 
 
 ## 📌 프로젝트 결과물
