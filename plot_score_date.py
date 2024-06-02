@@ -11,7 +11,7 @@ import tkinter.ttk as ttk
 
 
 ## 날짜별 그래프 ##
-def plot_score_trends(df_projectScore, user_id, score_type, title):
+def plot_score_date(df_projectScore, user_id, score_type, title):
     # 해당 사용자의 프로젝트 데이터 가져오기
     user_data = df_projectScore[df_projectScore['userid'] == user_id]
 
