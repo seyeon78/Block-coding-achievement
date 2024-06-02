@@ -10,7 +10,7 @@ import plotly.graph_objects as go
 import tkinter.ttk as ttk
 
 ## 성취도, 조회수를 이용한 그래프 함수 ##
-def plot_chart(df, metric, title, user_id=None, top_bottom=False):
+def plot_chart_achieve_view(df, metric, title, user_id=None, top_bottom=False):
     df_sorted = df.sort_values(by=metric)
     
     fig = px.bar(df_sorted, x='userid', y=metric, title=title, labels={metric: '성취도 점수' if metric == 'achievementScore' else '방문 횟수'})
