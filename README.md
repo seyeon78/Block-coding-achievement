@@ -34,11 +34,11 @@
 2. 유저 개인의 평가요소와 성취도 시각화
 ### 대시보드 예시
 
-> 그룹 대시보드
+> 그룹 대시보드\
 > 학급의 평균 및 각 지표 별 순위를 확인 가능함
 > ![image](https://github.com/seyeon78/Block-coding-achievement/assets/150774437/6078e39d-b167-42d5-9b8c-ef86f9e5b5a2)
 
-> 개인 대시보드
+> 개인 대시보드\
 > 학생 별  각 지표 순위 및 점수 추이를 확인 가능함
 > <br>
 > <img src="https://github.com/seyeon78/Block-coding-achievement/assets/150774437/9c9589d3-ca38-437d-a6e8-bcc539dd43a1.jpg" width="60%" height="30%" title="px(픽셀) 크기 설정" >
