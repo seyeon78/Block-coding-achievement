@@ -2,21 +2,20 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import plotly.graph_objects as go
 import numpy as np
 from pyparsing import empty
 import matplotlib.pyplot as plt
 from scipy.stats import norm
 import seaborn as sns
-import plotly.graph_objects as go
 import tkinter.ttk as ttk
 
-#def code
-from dashboard_code.visualize_rate import visualize_rate
-from dashboard_code.plot_chart import plot_chart
-from dashboard_code.set_dashboard_title import set_dashboard_title
-from dashboard_code.plot_score_trends import plot_score_trends
+#def code import
+from dashboard_code.plot_logi_feas_creat_poss import plot_logi_feas_creat_poss
+from dashboard_code.plot_chart_achieve_view import plot_chart_achieve_view
+from dashboard_code.set_title import set_title
+from dashboard_code.plot_score_date import plot_score_date
 from dashboard_code.plot_student_radar import plot_student_radar
-#from dashboard_code.dashboard_setting import setup_dashboard
 
 COLUMN = 'column'  # 실제 사용되는 상수 값을 확인하여 적절히 정의
 
@@ -24,7 +23,8 @@ COLUMN = 'column'  # 실제 사용되는 상수 값을 확인하여 적절히 �
 
 # 데이터프레임 로드
 df_achievement = pd.read_csv('student_data/final_user_g3.csv')  
-df_projectScore = pd.read_csv('student_data/final_merged_project_g3.csv') 
+df_projectScore = pd.read_csv('student_data/final_merged_project_g3.csv')
+# df_projectScore = pd.read_csv('project_result.csv')
 
 # 'userid' 열의 데이터 타입을 문자열(string)로 설정
 df_achievement['userid'] = df_achievement['userid'].astype(str)
@@ -62,30 +62,30 @@ def main_page():
         empty()
 
     with col1: 
-        set_dashboard_title(f"{first_groupid}의 성취도 대시보드", is_sidebar=True)
+        set_title(f"{first_groupid}의 성취도 대시보드", is_sidebar=True)
 
 
     with col2:
         st.markdown("## 학급 전체 인원의 성취도 그래프 ##")
-        fig, _ = plot_chart(df_achievement, 'achievementScore', "전체 성취도", top_bottom=True)
+        fig, _ = plot_chart_achieve_view(df_achievement, 'achievementScore', "전체 성취도", top_bottom=True)
         st.plotly_chart(fig, use_container_width=True)
 
     with col3:
         st.markdown("## 반에서 가장 조회수를 많이 받은 학생 그래프 ##")
-        fig, _ = plot_chart(df_achievement, 'visit', "우리반 조회수 1등")
+        fig, _ = plot_chart_achieve_view(df_achievement, 'visit', "우리반 조회수 1등")
         st.plotly_chart(fig, use_container_width=True)
 
     with col4:
-        visualize_rate(df_achievement, 'logicalRate', '논리성', 'logicalRate', 'logicalRate')
+        plot_logi_feas_creat_poss(df_achievement, 'logicalRate', '논리성', 'logicalRate', 'logicalRate')
         
     with col5:
-        visualize_rate(df_achievement, 'feasibilityRate', '구현성', 'feasibilityRate', 'feasibilityRate')
+        plot_logi_feas_creat_poss(df_achievement, 'feasibilityRate', '구현성', 'feasibilityRate', 'feasibilityRate')
         
     with col6:
-        visualize_rate(df_achievement, 'creativityRate', '창의성', 'creativityRate', 'creativityRate')
+        plot_logi_feas_creat_poss(df_achievement, 'creativityRate', '창의성', 'creativityRate', 'creativityRate')
         
     with col7:
-        visualize_rate(df_achievement, 'positivenessRate', '적극성', 'positivenessRate', 'positivenessRate')
+        plot_logi_feas_creat_poss(df_achievement, 'positivenessRate', '적극성', 'positivenessRate', 'positivenessRate')
 
     with empty2:
         empty() 
@@ -99,14 +99,14 @@ def create_user_page(user_id):
             st.empty() 
 
         with col8:
-            set_dashboard_title(f"{user_id}의 세부 평가지표 대시보드")
+            set_title(f"{user_id}의 세부 평가지표 대시보드")
                    
         with col9:
             plot_student_radar(df_achievement, user_id)
     
         with col10:
             st.markdown(f'**2. "{user_id}" 학생의 등수**')
-            fig, result_text = plot_chart(df_achievement, 'achievementScore', "반 전체 성취도 점수", user_id=user_id)
+            fig, result_text = plot_chart_achieve_view(df_achievement, 'achievementScore', "반 전체 성취도 점수", user_id=user_id)
             st.plotly_chart(fig, use_container_width=True)
             if result_text:
                 st.markdown(result_text, unsafe_allow_html=True)
@@ -118,17 +118,17 @@ def create_user_page(user_id):
         # 프로젝트별 성취도 점수 추이 시각화
         with col12:
             # logicalScore 점수를 date 별로 나타내는 산점도 그래프
-            plot_score_trends(df_projectScore, user_id, 'logical', f"{user_id}의 논리성 점수 추이")
+            plot_score_date(df_projectScore, user_id, 'logical', f"{user_id}의 논리성 점수 추이")
 
    
         with col13:
             # feasibilityScore 점수를 date 별로 나타내는 산점도 그래프
-            plot_score_trends(df_projectScore, user_id, 'feasibility', f"{user_id}의 구현성 점수 추이")
+            plot_score_date(df_projectScore, user_id, 'feasibility', f"{user_id}의 구현성 점수 추이")
 
 
         with col14:
             # creativityScore 점수를 date 별로 나타내는 산점도 그래프
-            plot_score_trends(df_projectScore, user_id, 'creativity', f"{user_id}의 창의성 점수 추이")
+            plot_score_date(df_projectScore, user_id, 'creativity', f"{user_id}의 창의성 점수 추이")
 
         with empty2:
             empty()
