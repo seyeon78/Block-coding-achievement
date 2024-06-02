@@ -9,7 +9,7 @@ import plotly.graph_objects as go
 import tkinter.ttk as ttk
 
 ## 학급 내 논리성, 구현성, 창의성, 적극성 1등, 꼴등 시각화 함수 ##
-def visualize_rate(df, rate_column, title, max_users_label, min_users_label):
+def plot_logi_feas_creat_poss(df, rate_column, title, max_users_label, min_users_label):
     max_score = df[rate_column].max()
     min_score = df[rate_column].min()
     max_users = df[df[rate_column] == max_score]['userid'].tolist()
