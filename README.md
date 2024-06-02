@@ -32,8 +32,8 @@
 
 ### 사용한 데이터
 groups.json의 userid를 기준으로\
-logblocksprojects.json, likes.json, favorites.json, discusses.json, comments.json\
 5개의 파일 사용
+![관계도](https://github.com/seyeon78/Block-coding-achievement/assets/150774437/d8f0e661-5167-4b0b-8ee7-0513f87b3abc)
 
 
 ## 📌 프로젝트 결과물
